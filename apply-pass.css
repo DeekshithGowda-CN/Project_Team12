@@ -30,7 +30,7 @@
 
 /* Steps Progress Bar */
 .steps-container {
-    padding: 25px 30px;
+    padding: 20px 35px;
     border-bottom: 1px solid var(--border-color);
 }
 
