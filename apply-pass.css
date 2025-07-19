@@ -28,3 +28,37 @@
     margin-bottom: 30px;
 }
 
+/* Steps Progress Bar */
+.steps-container {
+    padding: 25px 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--gray-light);
+    color: var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+}
+
