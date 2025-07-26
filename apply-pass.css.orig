@@ -30,7 +30,11 @@
 
 /* Steps Progress Bar */
 .steps-container {
+<<<<<<< HEAD
+    padding: 30px 25px;
+=======
     padding: 20px 35px;
+>>>>>>> pass1
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -62,7 +66,3 @@
     transition: all 0.3s;
 }
 
-.step.active .step-number {
-    background-color: var(--primary-color);
-    color: white;
-}
