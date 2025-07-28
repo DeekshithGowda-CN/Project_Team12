@@ -105,6 +105,11 @@
     margin-bottom: 8px;
 }
 
+.form-description {
+    color: var(--gray-color);
+    margin-bottom: 25px;
+}
+
 
 
 
