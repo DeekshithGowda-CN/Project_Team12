@@ -96,6 +96,9 @@
     background-color: var(--primary-color);
 }
 
+.form-step {
+    padding: 30px;
+}
 
 
 
