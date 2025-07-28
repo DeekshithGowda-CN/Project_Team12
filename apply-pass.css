@@ -116,6 +116,13 @@
     gap: 20px;
 }
 
+.form-group {
+    flex: 1;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
 
 
 
