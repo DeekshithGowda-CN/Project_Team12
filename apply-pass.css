@@ -110,6 +110,11 @@
     margin-bottom: 25px;
 }
 
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
 
 
 
