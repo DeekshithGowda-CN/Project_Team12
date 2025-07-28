@@ -156,12 +156,20 @@
     min-height: 100px;
     resize: vertical;
 }
+
 .form-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
+.form-navigation button i {
+    margin: 0 5px;
+}
+
+.hidden {
+    display: none;
+}
 
 
 
