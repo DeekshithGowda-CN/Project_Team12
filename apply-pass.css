@@ -179,9 +179,12 @@
 
 .pass-option {
     position: relative;
-}`
-
-
+}
+`
+.pass-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
 
 
 
