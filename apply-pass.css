@@ -395,3 +395,27 @@
 .terms-agreement a:hover {
     text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .review-item.full-width {
+        grid-column: auto;
+    }
+    
+      
+
+
+
+
+
+
+
