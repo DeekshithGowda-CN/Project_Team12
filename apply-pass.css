@@ -220,6 +220,10 @@
     color: var(--gray-color);
 }
 
-
+.route-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
 
