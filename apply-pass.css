@@ -411,7 +411,17 @@
         grid-column: auto;
     }
     
-      
+      .steps {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .step {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }   
 
 
 
