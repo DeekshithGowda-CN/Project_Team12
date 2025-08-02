@@ -367,6 +367,29 @@
     margin-bottom: 3px;
 }
 
+.review-value {
+    font-weight: 500;
+}
 
+.terms-agreement {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+    align-items: flex-start;
+}
+
+.terms-agreement input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+.terms-agreement label {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.terms-agreement a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
 
 
