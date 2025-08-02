@@ -352,6 +352,20 @@
     gap: 15px;
 }
 
+.review-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-item.full-width {
+    grid-column: span 2;
+}
+
+.review-label {
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 3px;
+}
 
 
 
