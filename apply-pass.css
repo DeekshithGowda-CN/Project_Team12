@@ -186,6 +186,14 @@
     opacity: 0;
 }
 
+.pass-option label {
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
 
 
 
