@@ -313,6 +313,11 @@
     transition: all 0.3s;
 }
 
+.file-upload input[type="file"]:focus + .file-upload-label,
+.file-upload-label:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+}
 
 
 
