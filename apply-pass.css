@@ -278,6 +278,16 @@
     font-size: 14px;
 }
 
+.route-name {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.route-description {
+    font-size: 13px;
+    color: var(--gray-color);
+}
+
 
 
 
