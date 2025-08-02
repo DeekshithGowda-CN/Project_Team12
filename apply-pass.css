@@ -392,4 +392,6 @@
     text-decoration: none;
 }
 
-
+.terms-agreement a:hover {
+    text-decoration: underline;
+}
