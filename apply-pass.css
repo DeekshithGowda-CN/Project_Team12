@@ -423,9 +423,13 @@
         gap: 15px;
     }   
 
-
-
-
-
-
-
+   .step-connector {
+        width: 2px;
+        height: 20px;
+        margin: 0 0 0 18px;
+    }
+    
+    .step-text {
+        text-align: left;
+    }
+}
