@@ -200,7 +200,11 @@
     background-color: var(--primary-light);
 }
 
-
+.pass-option-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
 
 
 
