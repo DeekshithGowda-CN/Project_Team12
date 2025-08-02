@@ -215,6 +215,10 @@
     color: var(--primary-color);
 }
 
+.pass-option-description {
+    font-size: 14px;
+    color: var(--gray-color);
+}
 
 
 
