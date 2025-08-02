@@ -319,7 +319,20 @@
     background-color: var(--primary-light);
 }
 
+.file-upload-label i {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
 
+.file-upload-label span {
+    margin-bottom: 5px;
+}
+
+.file-upload-label .file-info {
+    font-size: 12px;
+    color: var(--gray-color);
+}
 
 
 
