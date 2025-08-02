@@ -206,7 +206,14 @@
     margin-bottom: 5px;
 }
 
+.pass-option-name {
+    font-weight: 600;
+}
 
+.pass-option-price {
+    font-weight: 600;
+    color: var(--primary-color);
+}
 
 
 
