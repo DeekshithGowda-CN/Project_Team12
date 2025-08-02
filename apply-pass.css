@@ -247,7 +247,17 @@
     position: relative;
 }
 
-
+.route-option label:before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gray-color);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
 
 
 
