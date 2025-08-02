@@ -195,6 +195,11 @@
     transition: all 0.3s;
 }
 
+.pass-option input[type="radio"]:checked + label {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+}
+
 
 
 
