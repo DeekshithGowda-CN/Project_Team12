@@ -141,6 +141,23 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo(0, 0);
     });
 
+    // Handle file uploads
+    const fileInputs = document.querySelectorAll('input[type="file"]');
+    fileInputs.forEach(input => {
+        input.addEventListener('change', function(e) {
+            const fileName = e.target.files[0]?.name;
+            const fileInfoLabel = this.nextElementSibling.querySelector('.file-info');
+            
+            if (fileName) {
+                fileInfoLabel.textContent = `Selected: ${fileName}`;
+                this.nextElementSibling.classList.add('file-selected');
+            } else {
+                fileInfoLabel.textContent = 'JPG, PNG or PDF, max 5MB';
+                this.nextElementSibling.classList.remove('file-selected');
+            }
+        });
+    });
+
 
 
 
