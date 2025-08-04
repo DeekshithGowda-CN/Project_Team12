@@ -237,6 +237,14 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         }
      
-
-
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+        
+        return true;
+    }
+       
 
