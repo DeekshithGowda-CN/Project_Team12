@@ -59,7 +59,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextToReview = document.getElementById('nextToReview');
     const backToDocuments = document.getElementById('backToDocuments');
     const submitApplication = document.getElementById('submitApplication');
-
+    
+     // Step 1 to Step 2
+    nextToOptions.addEventListener('click', function() {
+        if (validatePersonalDetails()) {
+            personalDetails.classList.add('hidden');
+            passOptions.classList.remove('hidden');
+            
+            step1.classList.add('completed');
+            step1.classList.remove('active');
+            step2.classList.add('active');
+            
+            window.scrollTo(0, 0);
+        }
+    });
 
 
 
