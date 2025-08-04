@@ -175,7 +175,27 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Selected pass type:', selectedType, 'Price:', price);
         });
     });
-
+    
+    // Handle all routes checkbox
+    const allRoutesCheckbox = document.getElementById('route4');
+    const otherRouteCheckboxes = [
+        document.getElementById('route1'),
+        document.getElementById('route2'),
+        document.getElementById('route3')
+    ];
+    
+    allRoutesCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            otherRouteCheckboxes.forEach(checkbox => {
+                checkbox.checked = true;
+                checkbox.disabled = true;
+            });
+        } else {
+            otherRouteCheckboxes.forEach(checkbox => {
+                checkbox.disabled = false;
+            });
+        }
+    });
 
 
 
