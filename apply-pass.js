@@ -86,6 +86,32 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo(0, 0);
     });
 
+    // Step 2 to Step 3
+    nextToDocuments.addEventListener('click', function() {
+        if (validatePassOptions()) {
+            passOptions.classList.add('hidden');
+            uploadDocuments.classList.remove('hidden');
+            
+            step2.classList.add('completed');
+            step2.classList.remove('active');
+            step3.classList.add('active');
+            
+            window.scrollTo(0, 0);
+        }
+    });
+    
+    // Step 3 to Step 2
+    backToOptions.addEventListener('click', function() {
+        uploadDocuments.classList.add('hidden');
+        passOptions.classList.remove('hidden');
+        
+        step3.classList.remove('active');
+        step2.classList.remove('completed');
+        step2.classList.add('active');
+        
+        window.scrollTo(0, 0);
+    });
+
 
 
 
