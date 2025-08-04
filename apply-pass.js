@@ -158,6 +158,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+     // Handle pass type selection (update price display)
+    const passTypeRadios = document.querySelectorAll('input[name="passType"]');
+    passTypeRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            const selectedType = document.querySelector('input[name="passType"]:checked').value;
+            let price = '$120';
+            
+            if (selectedType === 'annual') {
+                price = '$220';
+            } else if (selectedType === 'monthly') {
+                price = '$40';
+            }
+            
+            // If implementing in a real application, update price display
+            console.log('Selected pass type:', selectedType, 'Price:', price);
+        });
+    });
 
 
 
