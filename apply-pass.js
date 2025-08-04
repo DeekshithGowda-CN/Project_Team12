@@ -272,5 +272,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function updateReviewInfo() {
+
+	    // Personal details
+        document.getElementById('reviewName').textContent = document.getElementById('fullName').value;
+        document.getElementById('reviewStudentId').textContent = document.getElementById('studentId').value;
+        document.getElementById('reviewEmail').textContent = document.getElementById('email').value;
+        document.getElementById('reviewPhone').textContent = document.getElementById('phone').value;
+
+        const departmentSelect = document.getElementById('department');
+        document.getElementById('reviewDepartment').textContent =
+            departmentSelect.options[departmentSelect.selectedIndex].text;
+
+        const yearSelect = document.getElementById('year');
+        document.getElementById('reviewYear').textContent =
+            yearSelect.options[yearSelect.selectedIndex].text;
+
+        // Pass details
+        const selectedPassType = document.querySelector('input[name="passType"]:checked').value;
+        let passTypeText = 'Semester Pass';
+        let priceText = '$120';
+
+        if (selectedPassType === 'annual') {
+            passTypeText = 'Annual Pass';
+            priceText = '$220';
+        } else if (selectedPassType === 'monthly') {
+            passTypeText = 'Monthly Pass';
+            priceText = '$40';
+        }
+
+        document.getElementById('reviewPassType').textContent = passTypeText;
+        document.getElementById('reviewPrice').textContent = priceText;
        
 
