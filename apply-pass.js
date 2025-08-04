@@ -15,3 +15,27 @@ document.addEventListener('DOMContentLoaded', function() {
     if (userNameElement && userData.name) {
         userNameElement.textContent = userData.name;
     }
+
+    if (userIdElement && userData.studentId) {
+        userIdElement.textContent = `Student ID: ${userData.studentId}`;
+    }
+    
+    // Pre-fill form with user data
+    if (userData) {
+        document.getElementById('fullName').value = userData.name || '';
+        document.getElementById('studentId').value = userData.studentId || '';
+        document.getElementById('email').value = userData.email || '';
+        document.getElementById('phone').value = userData.phone || '';
+        
+        // Set department if it exists
+        const departmentSelect = document.getElementById('department');
+        if (departmentSelect && userData.department) {
+            for (let i = 0; i < departmentSelect.options.length; i++) {
+                if (departmentSelect.options[i].text === userData.department || 
+                    departmentSelect.options[i].value === userData.department) {
+                    departmentSelect.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    }
