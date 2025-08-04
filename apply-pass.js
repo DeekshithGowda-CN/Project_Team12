@@ -198,4 +198,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    // Form submission
+    document.getElementById('passApplicationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (!document.getElementById('termsAgree').checked) {
+            alert('Please agree to the terms and conditions before submitting.');
+            return;
+        }
+        
+        // Simulate form submission
+        const submitBtn = document.getElementById('submitApplication');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+        
+        setTimeout(() => {
+            // Show success message
+            alert('Your pass application has been submitted successfully! We will process your application and notify you within 2 business days.');
+            
+            // Redirect to dashboard
+            window.location.href = 'dashboard.html';
+        }, 2000);
+    });
+
+
+      
+
+
 
