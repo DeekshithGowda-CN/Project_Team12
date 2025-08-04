@@ -73,6 +73,18 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo(0, 0);
         }
     });
+    
+     // Step 2 to Step 1
+    backToPersonal.addEventListener('click', function() {
+        passOptions.classList.add('hidden');
+        personalDetails.classList.remove('hidden');
+        
+        step2.classList.remove('active');
+        step1.classList.remove('completed');
+        step1.classList.add('active');
+        
+        window.scrollTo(0, 0);
+    });
 
 
 
