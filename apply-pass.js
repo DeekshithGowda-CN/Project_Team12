@@ -222,7 +222,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-      
+     // Validation functions
+    function validatePersonalDetails() {
+        const fullName = document.getElementById('fullName').value;
+        const studentId = document.getElementById('studentId').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const address = document.getElementById('address').value;
+        const department = document.getElementById('department').value;
+        const year = document.getElementById('year').value;
+        
+        if (!fullName || !studentId || !email || !phone || !address || !department || !year) {
+            alert('Please fill in all required fields.');
+            return false;
+        }
+     
 
 
 
