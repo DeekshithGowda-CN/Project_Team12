@@ -312,5 +312,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         document.getElementById('reviewRoutes').textContent = selectedRoutes.join(', ');
+
+
+	// Documents
+        document.getElementById('reviewIdCard').textContent = '✓ Uploaded';
+        document.getElementById('reviewEnrollment').textContent = '✓ Uploaded';
+        document.getElementById('reviewPhoto').textContent = '✓ Uploaded';
+    }
+});
+
        
 
