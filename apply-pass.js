@@ -7,4 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
         phone: '555-123-4567',
         department: 'Computer Science'
     };
-
+    
+    // Update user information in the header
+    const userNameElement = document.querySelector('.user-info h4');
+    const userIdElement = document.querySelector('.user-info p');
+    
+    if (userNameElement && userData.name) {
+        userNameElement.textContent = userData.name;
+    }
