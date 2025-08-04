@@ -64,3 +64,374 @@
     transition: all 0.3s;
 }
 
+.step.active .step-number {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.step.completed .step-number {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.step-text {
+    font-size: 14px;
+    color: var(--gray-color);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.step.active .step-text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.step-connector {
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--gray-light);
+    position: relative;
+    margin: 0 15px;
+}
+
+.step-connector.active {
+    background-color: var(--primary-color);
+}
+
+.form-step {
+    padding: 30px;
+}
+
+.form-step h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.form-description {
+    color: var(--gray-color);
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.form-navigation button i {
+    margin: 0 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.pass-type-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pass-option {
+    position: relative;
+}
+`
+.pass-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.pass-option label {
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pass-option input[type="radio"]:checked + label {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+}
+
+.pass-option-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.pass-option-name {
+    font-weight: 600;
+}
+
+.pass-option-price {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.pass-option-description {
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+.route-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.route-option {
+    position: relative;
+}
+
+.route-option input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.route-option label {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 15px;
+    padding-left: 45px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.route-option label:before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gray-color);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.route-option input[type="checkbox"]:checked + label {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+}
+
+.route-option input[type="checkbox"]:checked + label:before {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.route-option input[type="checkbox"]:checked + label:after {
+    content: "✓";
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    color: white;
+    font-size: 14px;
+}
+
+.route-name {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.route-description {
+    font-size: 13px;
+    color: var(--gray-color);
+}
+
+.file-upload {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.file-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.file-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.file-upload input[type="file"]:focus + .file-upload-label,
+.file-upload-label:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+}
+
+.file-upload-label i {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.file-upload-label span {
+    margin-bottom: 5px;
+}
+
+.file-upload-label .file-info {
+    font-size: 12px;
+    color: var(--gray-color);
+}
+
+.review-section {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.review-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-item.full-width {
+    grid-column: span 2;
+}
+
+.review-label {
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 3px;
+}
+
+.review-value {
+    font-weight: 500;
+}
+
+.terms-agreement {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+    align-items: flex-start;
+}
+
+.terms-agreement input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+.terms-agreement label {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.terms-agreement a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.terms-agreement a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .review-item.full-width {
+        grid-column: auto;
+    }
+    
+      .steps {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .step {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }   
+
+   .step-connector {
+        width: 2px;
+        height: 20px;
+        margin: 0 0 0 18px;
+    }
+    
+    .step-text {
+        text-align: left;
+    }
+}
