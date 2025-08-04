@@ -111,8 +111,35 @@ document.addEventListener('DOMContentLoaded', function() {
         
         window.scrollTo(0, 0);
     });
-
-
+  
+    // Step 3 to Step 4
+    nextToReview.addEventListener('click', function() {
+        if (validateDocuments()) {
+            uploadDocuments.classList.add('hidden');
+            reviewSubmit.classList.remove('hidden');
+            
+            step3.classList.add('completed');
+            step3.classList.remove('active');
+            step4.classList.add('active');
+            
+            // Update review information
+            updateReviewInfo();
+            
+            window.scrollTo(0, 0);
+        }
+    });
+    
+    // Step 4 to Step 3
+    backToDocuments.addEventListener('click', function() {
+        reviewSubmit.classList.add('hidden');
+        uploadDocuments.classList.remove('hidden');
+        
+        step4.classList.remove('active');
+        step3.classList.remove('completed');
+        step3.classList.add('active');
+        
+        window.scrollTo(0, 0);
+    });
 
 
 
