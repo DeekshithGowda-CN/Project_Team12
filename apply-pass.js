@@ -50,3 +50,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const passOptions = document.getElementById('passOptions');
     const uploadDocuments = document.getElementById('uploadDocuments');
     const reviewSubmit = document.getElementById('reviewSubmit');
+
+     // Navigation buttons
+    const nextToOptions = document.getElementById('nextToOptions');
+    const backToPersonal = document.getElementById('backToPersonal');
+    const nextToDocuments = document.getElementById('nextToDocuments');
+    const backToOptions = document.getElementById('backToOptions');
+    const nextToReview = document.getElementById('nextToReview');
+    const backToDocuments = document.getElementById('backToDocuments');
+    const submitApplication = document.getElementById('submitApplication');
+
+
+
+
+
+
+
+
