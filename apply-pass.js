@@ -39,3 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
+
+    // Step navigation
+    const step1 = document.getElementById('step1');
+    const step2 = document.getElementById('step2');
+    const step3 = document.getElementById('step3');
+    const step4 = document.getElementById('step4');
+    
+    const personalDetails = document.getElementById('personalDetails');
+    const passOptions = document.getElementById('passOptions');
+    const uploadDocuments = document.getElementById('uploadDocuments');
+    const reviewSubmit = document.getElementById('reviewSubmit');
