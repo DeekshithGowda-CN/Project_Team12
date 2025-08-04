@@ -302,5 +302,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.getElementById('reviewPassType').textContent = passTypeText;
         document.getElementById('reviewPrice').textContent = priceText;
+
+
+        // Selected routes
+        const selectedRoutes = [];
+        document.querySelectorAll('input[name="routes[]"]:checked').forEach(checkbox => {
+            const routeLabel = checkbox.nextElementSibling.querySelector('.route-name').textContent;
+            selectedRoutes.push(routeLabel);
+        });
+
+        document.getElementById('reviewRoutes').textContent = selectedRoutes.join(', ');
        
 
