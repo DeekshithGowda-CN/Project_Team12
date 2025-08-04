@@ -246,5 +246,31 @@ document.addEventListener('DOMContentLoaded', function() {
         
         return true;
     }
+
+    function validatePassOptions() {
+        // Check if at least one route is selected
+        const routes = document.querySelectorAll('input[name="routes[]"]:checked');
+        if (routes.length === 0) {
+            alert('Please select at least one route.');
+            return false;
+        }
+        
+        return true;
+    }
+    
+    function validateDocuments() {
+        const studentIdCard = document.getElementById('studentIdCard').files;
+        const enrollmentProof = document.getElementById('enrollmentProof').files;
+        const photoId = document.getElementById('photoId').files;
+        
+        if (studentIdCard.length === 0 || enrollmentProof.length === 0 || photoId.length === 0) {
+            alert('Please upload all required documents.');
+            return false;
+        }
+        
+        return true;
+    }
+    
+    function updateReviewInfo() {
        
 
